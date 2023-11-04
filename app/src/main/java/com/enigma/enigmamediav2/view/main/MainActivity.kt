@@ -13,7 +13,7 @@ import com.enigma.enigmamediav2.di.Injection
 import com.enigma.enigmamediav2.helper.TokenPreferences
 import com.enigma.enigmamediav2.helper.dataStore
 import com.enigma.enigmamediav2.utils.CommonUtils
-import com.enigma.enigmamediav2.view.UniversityLocationActivity
+import com.enigma.enigmamediav2.view.maps.UniversityLocationActivity
 import com.enigma.enigmamediav2.view.add.AddScreenActivity
 import com.enigma.enigmamediav2.view.landing.LandingScreenActivity
 import com.enigma.enigmamediav2.view.maps.UserLocationActivity
@@ -82,7 +82,6 @@ class MainActivity : AppCompatActivity() {
             mainViewModel.getStory.observe(this@MainActivity) {
                 adapter.submitData(lifecycle, it)
                 CommonUtils.showLoading(mainBinding.loadingMain, false)
-                Log.d("Paging Data", "Data dimuat ke dalam RecyclerView: $it")
             }
         }
     }

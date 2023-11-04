@@ -3,7 +3,6 @@ package com.enigma.enigmamediav2.view.login
 import android.content.Intent
 import android.graphics.Paint
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.ViewModelProvider
@@ -80,10 +79,8 @@ class LoginScreenActivity : AppCompatActivity() {
         }
     }
 
-    private suspend fun onLoginSuccess() {
+    private fun onLoginSuccess() {
         CommonUtils.showLoading(loginScreenBinding.loadingLogin, false)
-        val token = loadTokenDataStore()
-        Log.d("TokenLogin", "Token: $token")
         startActivity(Intent(this@LoginScreenActivity, MainActivity::class.java))
         finish()
     }
@@ -96,10 +93,5 @@ class LoginScreenActivity : AppCompatActivity() {
     private suspend fun saveTokenDataStore(token: String) {
         val dataStore = TokenPreferences.getInstance(this.dataStore)
         dataStore.saveToken(token)
-    }
-
-    private suspend fun loadTokenDataStore() : String {
-        val dataStore = TokenPreferences.getInstance(this.dataStore)
-        return dataStore.getToken()
     }
 }

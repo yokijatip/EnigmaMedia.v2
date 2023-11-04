@@ -95,7 +95,6 @@ class AddScreenActivity : AppCompatActivity() {
             currentImageUri = uri
             showImage()
         } else {
-            Log.d("Photo Picker", "No media selected")
             onUploadFailed()
         }
     }
@@ -115,7 +114,6 @@ class AddScreenActivity : AppCompatActivity() {
 
     private fun showImage() {
         currentImageUri?.let {
-            Log.d("Image URI", "showImage: $it")
             addBinding.ivPhoto.setImageURI(it)
         }
     }
@@ -132,6 +130,5 @@ class AddScreenActivity : AppCompatActivity() {
     private fun onUploadFailed() {
         CommonUtils.showLoading(addBinding.loadingAdd, false)
         CommonUtils.showToast(this, "Gagal Upload Coy")
-        finish()
     }
 }

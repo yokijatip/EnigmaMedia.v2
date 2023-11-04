@@ -9,7 +9,7 @@ import androidx.paging.cachedIn
 import com.enigma.enigmamediav2.data.remote.response.ListStoryItem
 import com.enigma.enigmamediav2.repo.Repository
 
-class MainViewModel(private val repository: Repository) : ViewModel() {
+class MainViewModel(repository: Repository) : ViewModel() {
 
     val getStory: LiveData<PagingData<ListStoryItem>> =
         repository.getStory().cachedIn(viewModelScope)

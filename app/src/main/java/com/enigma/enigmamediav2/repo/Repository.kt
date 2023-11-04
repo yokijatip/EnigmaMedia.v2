@@ -1,5 +1,6 @@
 package com.enigma.enigmamediav2.repo
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
@@ -73,7 +74,7 @@ class Repository(private val apiService: ApiService) {
         }
     }
 
-//    Detail Story
+    //    Detail Story
     suspend fun getDetail(id: String): DetailResponse {
         try {
             val response = apiService.getDetail(id)
@@ -87,7 +88,7 @@ class Repository(private val apiService: ApiService) {
         }
     }
 
-    suspend fun getLocation(): StoryResponse{
+    suspend fun getLocation(): StoryResponse {
         return apiService.getUserLocation(1)
     }
 

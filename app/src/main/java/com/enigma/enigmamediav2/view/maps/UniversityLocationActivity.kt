@@ -1,4 +1,4 @@
-package com.enigma.enigmamediav2.view
+package com.enigma.enigmamediav2.view.maps
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
