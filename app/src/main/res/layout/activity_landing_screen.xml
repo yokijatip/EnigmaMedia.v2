@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layoutDescription="@xml/activity_landing_screen_scene"
+    tools:context=".view.landing.LandingScreenActivity">
+
+    <ImageView
+        android:id="@+id/iv_landing_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="48dp"
+
+        android:src="@drawable/avatar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_landing_heading"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="64dp"
+
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/landing_headline"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_landing_1" />
+
+    <TextView
+        android:id="@+id/tv_landing_description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+
+        android:text="@string/landing_description"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_landing_heading" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/login"
+        android:textSize="15sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        android:layout_width="150dp"
+
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_login"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

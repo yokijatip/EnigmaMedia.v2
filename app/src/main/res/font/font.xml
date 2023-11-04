@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    Font Jost Bold -->
+    <font
+        android:fontStyle="normal"
+        android:font="@font/jost_bold"/>
+
+<!--    Font Montserrat Bold -->
+    <font
+        android:font="@font/montserrat_bold"
+        android:fontStyle="normal"/>
+
+<!--    Font Montserrat Semi Bold -->
+    <font
+        android:font="@font/montserrat_semibold"
+        android:fontStyle="normal"/>
+
+<!--    Font Montserrat Medium -->
+    <font
+        android:fontStyle="normal"
+        android:font="@font/montserrat_medium"/>
+
+</font-family>

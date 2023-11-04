@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">EnigmaMedia.v2</string>
+
+    <!--    Login & Register -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--    Api Google Map -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAvGJk5pYpsRue9iGNUsCZCkcDeO4m0QlU</string>
+
+    <!--    Landing Screen -->
+    <string name="landing_headline">Dicoding Story can be find!</string>
+    <string name="landing_description">Enigma Media adalah tugas submission 1 dari kelas Belajar Android Intermediate</string>
+
+    <!--    Login Screen -->
+    <string name="login_headline">Let\'s \nget started</string>
+    <string name="login_description">Bingung mau nulis apa, Cukurukuk kukgru kukgru</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login_to_register">Belum punya Akun?  </string>
+
+    <!--    Register Screen -->
+    <string name="register_headline">Hai! \nQuick Register :D</string>
+    <string name="register_description">Halo kak reviewer kalo di tolak kasih tau saran nya juga ya, makasih</string>
+    <string name="register_to_login">Sudah punya Akun?  </string>
+
+    <!--    Main Screen -->
+    <string name="main_headline">Welcome to Enigma</string>
+    <string name="main_story_headline_1">Latest Story</string>
+
+    <!--    Tools Text -->
+    <string name="tools_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industryince the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--    Foto ga ada-->
+    <string name="image_warning">Photo nya mana bang</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_university_map">UniversityMap</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="title_activity_user_location">UserLocation</string>
+</resources>
