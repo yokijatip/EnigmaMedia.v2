@@ -54,7 +54,7 @@ interface ApiService {
     ): Response<StoryResponse>
 
     @GET("stories")
-    suspend fun getStoryWithLocation(
+    suspend fun getUserLocation(
         @Query("location") location: Int = 1,
     ): StoryResponse
 

@@ -13,10 +13,12 @@ import com.enigma.enigmamediav2.di.Injection
 import com.enigma.enigmamediav2.helper.TokenPreferences
 import com.enigma.enigmamediav2.helper.dataStore
 import com.enigma.enigmamediav2.utils.CommonUtils
+import com.enigma.enigmamediav2.view.UniversityLocationActivity
 import com.enigma.enigmamediav2.view.add.AddScreenActivity
 import com.enigma.enigmamediav2.view.landing.LandingScreenActivity
-import com.enigma.enigmamediav2.viewModel.main.ViewModelFactory
+import com.enigma.enigmamediav2.view.maps.UserLocationActivity
 import com.enigma.enigmamediav2.viewModel.main.MainViewModel
+import com.enigma.enigmamediav2.viewModel.main.ViewModelFactory
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -59,6 +61,14 @@ class MainActivity : AppCompatActivity() {
                     finish()
                 }
             }
+
+            buttonGoogleMap.setOnClickListener {
+                startActivity(Intent(this@MainActivity, UserLocationActivity::class.java))
+            }
+
+            bgMap.setOnClickListener {
+                startActivity(Intent(this@MainActivity, UniversityLocationActivity::class.java))
+            }
         }
         floatingActionButtonAdd()
     }
@@ -83,11 +93,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, AddScreenActivity::class.java))
             }
         }
-    }
-
-    private suspend fun loadTokenDataStore(): String {
-        val dataStore = TokenPreferences.getInstance(this.dataStore)
-        return dataStore.getToken()
     }
 
     private suspend fun clearTokenDataStore() {

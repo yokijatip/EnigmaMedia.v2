@@ -10,7 +10,7 @@
     <string name="password">Password</string>
 
     <!--    Api Google Map -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAvGJk5pYpsRue9iGNUsCZCkcDeO4m0QlU</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAA5w6YUEKwOc6FPtB5xVezEolux92SIec</string>
 
     <!--    Landing Screen -->
     <string name="landing_headline">Dicoding Story can be find!</string>
@@ -40,4 +40,5 @@
     <string name="title_activity_university_map">UniversityMap</string>
     <string name="title_activity_maps2">MapsActivity2</string>
     <string name="title_activity_user_location">UserLocation</string>
+    <string name="title_activity_university_location">UniversityLocationActivity</string>
 </resources>

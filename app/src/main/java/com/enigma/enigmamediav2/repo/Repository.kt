@@ -10,6 +10,7 @@ import com.enigma.enigmamediav2.data.remote.response.DetailResponse
 import com.enigma.enigmamediav2.data.remote.response.ListStoryItem
 import com.enigma.enigmamediav2.data.remote.response.LoginResponse
 import com.enigma.enigmamediav2.data.remote.response.RegisterResponse
+import com.enigma.enigmamediav2.data.remote.response.StoryResponse
 import com.enigma.enigmamediav2.data.remote.service.ApiService
 import com.enigma.enigmamediav2.paging.StoryPagingSource
 import okhttp3.MultipartBody
@@ -84,6 +85,10 @@ class Repository(private val apiService: ApiService) {
         } catch (e: Exception) {
             throw e
         }
+    }
+
+    suspend fun getLocation(): StoryResponse{
+        return apiService.getUserLocation(1)
     }
 
 }
