@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val repository = Injection.provideRepository(context)
         val viewModelFactory = ViewModelFactory(repository)
         mainViewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
+
 //        Adapter & Recycler View
         adapter = StoryAdapter()
         val layoutManager = LinearLayoutManager(context)
